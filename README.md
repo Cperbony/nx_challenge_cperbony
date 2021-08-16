@@ -19,19 +19,19 @@ Cálculo da PMT:
 
 http://ghiorzi.org/amortiza.htm
 ```
-# Criando ambiente rvm para a gemset
+### Criando ambiente rvm para a gemset
 rvm gemset create nx_challenge
 
-# setar a versão do ruby e gems
+### setar a versão do ruby e gems
 rvm --rvmrc 2.7.2@nx_challenge
 
-# setar como default in shell and IDE
+#### setar como default in shell and IDE
 rvm use 2.7.2 -default2.7.2@nx_challenge
 
-# Instalar dependências
+## Instalar dependências
 bundle install
 
-# Iniciar a criação e a migração do banco de dados
+## Iniciar a criação e a migração do banco de dados
 rails db:create
 rails db:migrate
 
@@ -81,7 +81,7 @@ rspec spec/controllers/loans_controllers_spec.rb
 ## Run all models spec
 rspec spec/models/loan_spec.rb 
 
-#### Requisitos técnicos
+##### Requisitos técnicos
 - Usar Ruby on Rails
 - É permitido o uso de frameworks e gems
 - Deve ser usado GIT para versionamento
